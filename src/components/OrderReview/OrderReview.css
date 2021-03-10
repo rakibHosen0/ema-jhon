@@ -1,0 +1,12 @@
+.review-container {
+  display: flex;
+}
+.review-items {
+  width: 70%;
+  margin-left: 4rem;
+  margin-right: 0.5rem;
+  border-right: 1px solid lightgray;
+}
+.review-cart {
+  margin: 10px;
+}
