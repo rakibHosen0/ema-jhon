@@ -13,7 +13,7 @@ import {
 
 const Shop = () => {
   const first10 = fakeData.slice(0, 20);
-  const [products, setProducts] = useState(first10);
+  const [products] = useState(first10);
   const [card, setCart] = useState([]);
 
   useEffect(() => {
