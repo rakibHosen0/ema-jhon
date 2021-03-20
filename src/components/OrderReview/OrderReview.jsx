@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router";
 import fakeData from "../../fakeData";
 import happyImage from "../../images/giphy.gif";
 import {
@@ -18,11 +19,9 @@ const OrderReview = () => {
     setCart(newCart);
     removeFromDatabaseCart(productKey);
   };
-
-  const handlePlaceOrder = () => {
-    setCart([]);
-    setOrderPlace(true);
-    processOrder();
+  const history = useHistory();
+  const handleProceedCheckout = () => {
+    history.push("/shipment");
   };
 
   let thankYou;
@@ -54,8 +53,8 @@ const OrderReview = () => {
       </div>
       <div className="review-cart">
         <Cart cart={cart}>
-          <button onClick={handlePlaceOrder} className="btn">
-            Place Order
+          <button onClick={handleProceedCheckout} className="btn">
+            Proceed Checkout
           </button>
         </Cart>
       </div>

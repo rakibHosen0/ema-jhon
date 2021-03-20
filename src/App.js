@@ -6,6 +6,8 @@ import OrderReview from "./components/OrderReview/OrderReview";
 import Inventroy from "./components/Inventory/Inventroy";
 import NotFound from "./components/NotFound/NotFound";
 import ProductDetails from "./components/ProductDetail/ProductDetails";
+import Shipment from "./components/Shipment/Shipment";
+import Login from "./components/Login/Login";
 function App() {
   return (
     <div>
@@ -20,6 +22,14 @@ function App() {
           </Route>
           <Route path="/inventory">
             <Inventroy></Inventroy>
+          </Route>
+
+          <Route path="/login">
+            <Login />
+          </Route>
+
+          <Route path="/shipment">
+            <Shipment />
           </Route>
           <Route exact path="/"></Route>
           <Route path="/product/:productKey">
