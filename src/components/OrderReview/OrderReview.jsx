@@ -4,7 +4,6 @@ import fakeData from "../../fakeData";
 import happyImage from "../../images/giphy.gif";
 import {
   getDatabaseCart,
-  processOrder,
   removeFromDatabaseCart,
 } from "../../utilities/databaseManager";
 import Cart from "../Cart/Cart";
