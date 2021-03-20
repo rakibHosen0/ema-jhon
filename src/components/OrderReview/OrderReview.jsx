@@ -13,7 +13,7 @@ import "./OrderReview.css";
 
 const OrderReview = () => {
   const [cart, setCart] = useState([]);
-  const [orderPlace, setOrderPlace] = useState(false);
+  const [orderPlace] = useState(false);
   const removeProduct = (productKey) => {
     const newCart = cart.filter((pd) => pd.key !== productKey);
     setCart(newCart);
